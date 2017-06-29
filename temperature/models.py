@@ -9,6 +9,14 @@ class Country(models.Model):
         unique=True
     )
 
+    class Meta:
+        verbose_name = "Country"
+        verbose_name_plural = "Countries"
+        ordering = ('name', )
+
+    def __str__(self):
+        return self.name
+
 
 class Record(models.Model):
     """Temperature record"""
@@ -39,4 +47,10 @@ class Record(models.Model):
     )
 
     class Meta:
+        verbose_name = "Record"
+        verbose_name_plural = "Records"
+        ordering = ('country', 'date')
         unique_together = ('date', 'country')
+
+    def __str__(self):
+        return '{} - {}'.format(self.country, self.date)
