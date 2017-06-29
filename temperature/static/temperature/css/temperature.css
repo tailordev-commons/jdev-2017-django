@@ -1,0 +1,39 @@
+body {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+}
+
+table thead tr th {
+  border-bottom: 1px solid #333;
+}
+
+table tr:nth-child(even) {
+  background-color: #e6e6e6;
+}
+
+table tr > * {
+  width: 25%;
+  text-align: right;
+  padding: 0.4rem;
+}
+
+table tr > *:first-child {
+  text-align: left;
+}
+
+.pagination {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  text-align: center;
+  border-top: 1px solid #333;
+}

@@ -1,8 +1,11 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title>Temperature records</title>
+    <link rel="stylesheet" href="{% static "temperature/css/temperature.css" %}">
   </head>
   <body>
     <h1>Temperature records</h1>
@@ -19,7 +22,7 @@
       <tbody>
         {% for record in record_list %}
         <tr>
-          <td>{{ record.date | date }}</td>
+          <td>{{ record.date | date:"Y M" }}</td>
           <td>{{ record.temperature | default:"N/A" }}</td>
           <td>{{ record.uncertainty | default:"N/A" }}</td>
           <td>{{ record.country.name }}</td>
