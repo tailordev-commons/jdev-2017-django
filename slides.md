@@ -71,7 +71,7 @@ For the practical part, you will need:
 
 ## Django's ORM
 
-ORM = **O**bject **R**elated **M**apper
+ORM = **O**bject-**R**elational **M**apping
 
 ```python
 # A model is a python class
@@ -113,7 +113,7 @@ class Record(models.Model):
         return '{} - {}'.format(self.country, self.date
 ```
 
-Checkout Django's documentation for an exaustive list of `Field` types.
+Read Django docs for the list of `Field` types.
 
 ----
 
@@ -596,7 +596,7 @@ class Command(BaseCommand):
 
 ----
 
-## Improve Admin exploration (1)
+## Improve Admin
 
 Add `__str__` methods to your models:
 
@@ -618,9 +618,9 @@ class Record(models.Model):
 
 ----
 
-## Improve Admin exploration (2)
+## Improve Admin
 
-Make records exploration in the admin great again with a dedicated `ModelAdmin`:
+Create a dedicated `ModelAdmin` for records:
 
 ```python
 # temperature/admin.py
