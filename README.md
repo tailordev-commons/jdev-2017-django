@@ -38,8 +38,8 @@ This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0
 International License](http://creativecommons.org/licenses/by-sa/4.0/) (see
 [LICENSE](./LICENSE)).
 
-Data from the [`./climate/data`](repository) are part of the [Climate Change:
-Earth Surface Temperature
+Data from `temperature/fixtures/` are part of the [Climate Change: Earth
+Surface Temperature
 Data](https://www.kaggle.com/berkeleyearth/climate-change-earth-surface-temperature-data)
 Kaggle dataset, licensed under a [Creative Commons Attribution-ShareAlike 4.0
 International License](http://creativecommons.org/licenses/by-sa/4.0/).
