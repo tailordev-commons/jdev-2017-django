@@ -33,7 +33,7 @@ Marseille (France) - 2017/07/05
 2. Bootstrap your project
 3. Create yout first Django application
 
---- 
+---
 
 ## Install party!
 
@@ -57,7 +57,7 @@ For the practical part, you will need:
 * View tabular data per country,
 * Plot data per country (optional).
 
---- 
+---
 
 # A short introduction to Django
 
@@ -162,7 +162,7 @@ HTML + template language
   </head>
   <body>
     <h1>Record {{ record.id }}</h1>
-    
+
     Sampling date: {{ record.date | date }}
     ...
   </body>
@@ -207,7 +207,7 @@ Activate the newly created `virtualenv`:
 ```bash
 $ source venv/bin/activate
 # Now your prompt should be modified:
-(venv) $ 
+(venv) $
 ```
 
 ----
@@ -223,7 +223,7 @@ Install the latest Django release with `pip`:
 And create your Django project:
 
 ```bash
-(venv) $ django-admin startproject climate . 
+(venv) $ django-admin startproject climate .
 # Have you seen the `.` at the end of this latest command?
 ```
 
@@ -365,7 +365,7 @@ class Record(models.Model):
         'Country',
         on_delete=models.CASCADE
     )
-    
+
     class Meta:
         unique_together = ('date', 'country')
 ```
@@ -419,7 +419,7 @@ Django migrations are suites of python scripts that incrementally makes your dat
 	.gitignore \
 	climate/settings.py \
 	temperature/models.py \
-	temperature/migrations/0001_initial.py 
+	temperature/migrations/0001_initial.py
 (venv) $ git commit -m 'Add temperature models'
 ```
 
@@ -606,8 +606,8 @@ class Country(models.Model):
     # [...]
     def __str__(self):
         return self.name
-        
-        
+
+
 class Record(models.Model):
     # [...]
     def __str__(self):
@@ -645,7 +645,7 @@ admin.site.register(Record, RecordAdmin)
 
 # Create a Django view
 
----- 
+----
 
 ## Record list view
 
@@ -698,7 +698,7 @@ urlpatterns = [
 ]
 ```
 
-Now browse to: http://127.0.0.1:8000 
+Now browse to: http://127.0.0.1:8000
 
 > What is missing?
 
@@ -908,7 +908,7 @@ Commit your work before writting your first test:
 (venv) $ git commit -m 'Add & configure pytest'
 ```
 
----- 
+----
 
 ## Add your first test
 
