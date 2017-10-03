@@ -19,11 +19,10 @@ $ git clone git@github.com:tailordev-commons/jdev-2017-django.git
 Create a python `virtualenv` and install dependencies:
 
 ```bash
-$ cd project.git
+$ cd jdev-2017-django
 $ python3 -m venv venv
 $ source venv/bin/activate
 (venv) $ pip install -r requirements-dev.txt
-(venv) $ python setup.py develop
 ```
 
 ## Running the test suite
